@@ -12,4 +12,6 @@ var gammeElements = [ //déclaration d'un tableau
     "ciseaux"
 ];
 
-var player = window.prompt("Choose : " + gammeElements);
+var player = window.prompt("Choose : " + gammeElements); //choix du player
+
+var computer = Math.random(); // choix de l'ordinateur
