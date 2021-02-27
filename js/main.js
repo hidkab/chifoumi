@@ -23,5 +23,18 @@ if (computer <= 0.34) {
     }
     else {
         computer = "ciseaux";
-    }
+}
 
+if (player === computer) {   //comparer les choix
+    alert("Equality");
+}
+    else if (
+        (player === gammeElements[0] && computer === gammeElements[2]) ||
+        (player === gammeElements[1] && computer === gammeElements[0]) ||
+        (player === gammeElements[2] && computer === gammeElements[1]) 
+    ) {
+        alert(userName + " is winner");
+    }
+    else {
+        alert("Computer is winner");
+}
