@@ -15,3 +15,13 @@ var gammeElements = [ //déclaration d'un tableau
 var player = window.prompt("Choose : " + gammeElements); //choix du player
 
 var computer = Math.random(); // choix de l'ordinateur
+if (computer <= 0.34) {
+    computer = "pierre";
+}
+    else if (computer <= 0.67) {
+        computer = "peuille";
+    }
+    else {
+        computer = "ciseaux";
+    }
+
